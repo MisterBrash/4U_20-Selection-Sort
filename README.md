@@ -14,9 +14,6 @@ This is another extremely common sorting method. This algorithm traverses the ar
 </tr>
 </table>
 
-
-
-
 This algorithm _greatly reduces the number of swaps_ but still requires **many** comparisons.
 
 ### Alternate Version:
@@ -31,17 +28,34 @@ In the "Find the Largest" version, on each pass of the algorithm:
 
 ### Code:
 
-1. Write the function `selection_sort(unsortedArray, debug = false)`. This function will sort the contents in a _copy_ of `unsortedArray` using [the alternate Selection Sort given above](#alternate-version).  
+1. Write the function `selection_sort(unsortedArray, debug = false)`. This function will sort a _copy_ of `unsortedArray` using [the alternate Selection Sort given above](#alternate-version).  
   
     To clarify:  Your implementation will move **_large_ items to the _end_ of the list**.
   
     It will _return_ the sorted array. The `debug` flag, if `true`, causes the function to print the array to the console after each _swap_. Feel free to copy and paste useful code from previous projects for this.  
 
-2. Write the function `topX(x, data)` which returns an array of the top (largest) `x` items in the array **`data`**. It will utilize a _partial_ selection sort, **only sorting the top `x` elements** and return that sorted array of size `x`. The returned array should be sorted in _ascending_ order. **Pay close attention to the mention of _partial sort_** - you should _not_ sort the entire array, that's a waste of time.
+2. Write the function `topX(x, data)` which returns an array of the top (largest) `x` items in the array **`data`**. It will utilize a _partial_ selection sort, **only sorting the top `x` elements** and return that sorted array of size `x`. The returned array should be sorted in _ascending_ order. **Pay close attention to the mention of _partial sort_** - you should _not_ sort the entire array, that's a waste of time.  
+For example:
+    ```JS
+    > topX(4, [19,3,0,52,13,4,9,2,0,1])
+    [9, 13, 19, 52]
+    
+    > topX(2, [19,3,0,52,13,4,9,2,0,1])
+    [19, 52]
+    ```
  
 3. Write the function `bottomX(x, data)`. Similar to `topX`, it will use a _partial_ selection sort and return the bottom (lowest) `x` many values from the array **`data`** in _ascending_ order. Again, you should _not_ sort the entire array.
+For example:
+    ```JS
+    > bottomX(5, [19,3,0,52,13,4,9,2,0,1])
+    [0, 0, 1, 2, 3]
+    
+    > bottomX(2, [19,3,0,52,13,4,9,2,0,1])
+    [0, 0]
+    ```
+
   
-4. (optional) Write the function `rank(value, data)` that returns the numeric rank (position) of the first instance of `value` in the _unsorted_ array `data`. Return -1 if the value is not found. **For example:**<br>
+4. (optional) Write the function `rank(value, data)` which returns the numeric rank (position) of the first instance of `value` in the _unsorted_ array `data`. Return -1 if the value is not found. **For example:**<br>
     ```JS
     > rank(13, [19,3,0,52,13,4,9,2,0,1])
     8
@@ -56,17 +70,15 @@ In the "Find the Largest" version, on each pass of the algorithm:
     1
     ```
 
-    **Note** - As with the previous sorting tasks, you are permitted to write your own helper functions, utilize the functions in the [`Library`](library.js), or copy useful code you wrote for previous projects.
+---
 
-### Discussion Questions:
+**Note** - As with previous coding tasks, you are permitted to write your own helper functions, utilize the functions in [`library.js`](library.js), or copy useful code you wrote for previous projects. However, you are _not_ permitted to find the algorithm, use built-in sorting methods, or cheat in any other way. Have pride in your work and code the algorithm yourself.
 
-Answer the following discussion questions in the [index.html](index.html) file.
+---
 
-1. What would you have to change in your code of `selection_sort()` to have it sort in _descending_ order? Include the line-number(s) from your `script.js` file when discussing your answer.
-2. What would you have to change in your code for `selection_sort()` to have it swap the lowest value to the front of the array instead of the largest to the end? Include the line-number(s) from your `script.js` file in your answer.
-3. Is Selection Sort “stable”? Explain your reasoning.
+### Code Submission & Discussion Questions:
 
-Note - [the HTML file](index.html) has not been set up for your answers. You will need to do this.
+Submit your code to GitHub and paste it into the appropriate box in the task document. Then complete the discussion questions on the third page of the document.
 
 <br><br>
 
