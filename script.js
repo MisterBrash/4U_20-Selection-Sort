@@ -1,6 +1,6 @@
 /**
  *  ICS4UC - Mr. Brash 🐿️
- *  3.3 - Selection Sort
+ *  20 - Selection Sort
  *
  *  Author:
  **/
