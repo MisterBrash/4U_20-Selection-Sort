@@ -31,7 +31,11 @@ In the "Find the Largest" version, on each pass of the algorithm:
 
 ### Code:
 
-1. Write the function `selection_sort(unsortedArray, debug = false)` in [script.js](script.js). This function will sort the contents in a _copy_ of **unsortedArray** using the description of [the alternate Selection Sort given above](#alternate-version). Move **_large_ items to the _end_ of the list**. It will _return_ the sorted array. The `debug` flag, if `true`, causes the function to print the array to the console after each _swap_. Feel free to copy and paste useful code from previous projects for this.
+1. Write the function `selection_sort(unsortedArray, debug = false)`. This function will sort the contents in a _copy_ of `unsortedArray` using [the alternate Selection Sort given above](#alternate-version).  
+  
+    To clarify:  Your implementation will move **_large_ items to the _end_ of the list**.
+  
+    It will _return_ the sorted array. The `debug` flag, if `true`, causes the function to print the array to the console after each _swap_. Feel free to copy and paste useful code from previous projects for this.  
 
 2. Write the function `topX(x, data)` which returns an array of the top (largest) `x` items in the array **`data`**. It will utilize a _partial_ selection sort, **only sorting the top `x` elements** and return that sorted array of size `x`. The returned array should be sorted in _ascending_ order. **Pay close attention to the mention of _partial sort_** - you should _not_ sort the entire array, that's a waste of time.
  
